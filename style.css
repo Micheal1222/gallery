@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  background: #9e2f2f;
+  font-family: "Roboto", sans-serif;
+}
+
+.room-gallery {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.room-description {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #daac77;
+  color: rgb(41, 41, 41);
+}
+.room-description h1 {
+  padding: 10px;
+  font-size: 40px;
+}
+
+.gallery-hightlight {
+  width: 90%;
+  height: 40%;
+}
+
+.room-preview {
+  display: flex;
+  width: 100%;
+  border: 2px solid #0a0a0a;
+}
+.room-preview img {
+  flex-grow: 1;
+  height: 100px;
+  opacity: 0.5;
+  transition: opacity 0.4s ease;
+  cursor: pointer;
+}
+
+img.room-active {
+  opacity: 1;
+}
